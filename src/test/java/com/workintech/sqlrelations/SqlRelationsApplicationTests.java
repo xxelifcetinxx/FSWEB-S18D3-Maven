@@ -14,7 +14,9 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@SpringBootTest
+@SpringBootTest(classes = SqlRelationsApplication.class)
+
+
 @ExtendWith(ResultAnalyzer.class)
 class SqlRelationsApplicationTests {
 	private DoctorRepository doctorRepository;
